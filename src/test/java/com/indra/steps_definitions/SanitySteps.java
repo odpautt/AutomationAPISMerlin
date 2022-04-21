@@ -1,5 +1,6 @@
 package com.indra.steps_definitions;
 
+import com.indra.actions.ApisTestPojo;
 import com.indra.actions.ConsultResultAutomation;
 import com.indra.actions.ExecuteServicesRestActions;
 import cucumber.api.java.en.Given;
@@ -16,7 +17,8 @@ public class SanitySteps {
 
     @Given("^se realiza la configuracion del Json$")
     public void seRealizaLaConfiguracionDelJson() {
-
+        //ApisTestPojo apisTestPojo = new ApisTestPojo();
+        //apisTestPojo.getAuthenticateTokenAPI("as");
     }
 
     @When("^se ejecuta el json configurado$")

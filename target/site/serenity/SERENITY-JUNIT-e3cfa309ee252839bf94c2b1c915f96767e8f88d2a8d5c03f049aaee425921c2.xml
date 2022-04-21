@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<testsuite name="Sanity Merlin Json" time="62.57" tests="1" errors="0" skipped="0" failures="1" timestamp="2022-04-20 06:35:31"><testcase name="se requiere ejecutar el Json"><failure message="Finaliza de manera Exitosa la automatizacion&#xA;Expected: &quot;Exitoso&quot;&#xA;     but: was &quot;Fallido&quot;" type="java.lang.AssertionError">Finaliza de manera Exitosa la automatizacion
+<testsuite name="Sanity Merlin Json" time="102.93" tests="1" errors="0" skipped="0" failures="1" timestamp="2022-04-21 12:23:54"><testcase name="se requiere ejecutar el Json"><failure message="Finaliza de manera Exitosa la automatizacion&#xA;Expected: &quot;Exitoso&quot;&#xA;     but: was &quot;Fallido&quot;" type="java.lang.AssertionError">Finaliza de manera Exitosa la automatizacion
 Expected: "Exitoso"
      but: was "Fallido"</failure><system-err>Finaliza de manera Exitosa la automatizacion
 Expected: "Exitoso"
      but: was "Fallido"
 com.indra.actions.ConsultResultAutomation.consultResultOfAutomation(ConsultResultAutomation.java:36)
-com.indra.steps_definitions.SanitySteps.seObtieneLaRespuestaDeLaEjecucionDelJson(SanitySteps.java:29)
+com.indra.steps_definitions.SanitySteps.seObtieneLaRespuestaDeLaEjecucionDelJson(SanitySteps.java:31)
 ✽.Se obtiene la respuesta de la ejecucion del json(src/test/resources/features/execute.feature:10)
 </system-err></testcase></testsuite>

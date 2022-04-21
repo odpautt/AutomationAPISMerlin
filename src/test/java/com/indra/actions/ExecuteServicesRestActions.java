@@ -87,22 +87,6 @@ public class ExecuteServicesRestActions {
         return response;
     }
 
-    public void getAuthenticateTokenAPI(String URL){
-        RequestAuthenticateApi requestAuthenticateApi = new RequestAuthenticateApi();
-        requestAuthenticateApi.setUsername("Orlando.Pautt");
-        requestAuthenticateApi.setPassword("OrlandoDar.12*");
-        URL="http://10.69.42.60:8089/api/authenticate-api";
 
-        String token =
-                given()
-                        .contentType(ContentType.JSON)
-                        .body(requestAuthenticateApi)
-                        .post(URL)
-                        .then()
-                        .statusCode(200)
-                        .extract()
-                        .body()
-                        .as();
-    }
 
 }
