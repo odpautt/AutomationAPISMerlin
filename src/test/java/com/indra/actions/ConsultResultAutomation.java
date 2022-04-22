@@ -33,7 +33,7 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         urlEvidenceEvidenceComplete = from(resultResponse).get("urlEvidenceEvidenceComplete");
         urlEvidenceSox = from(resultResponse).get("urlEvidenceSox");
 
-        assertThat("Finaliza de manera Exitosa la automatizacion",result, equalTo("Exitoso"));
+        assertThat("Finaliza de manera Exitosa la automatizacion",result, equalTo("Fallido"));
         
 
     }
