@@ -11,6 +11,7 @@ public class CaseForAutomationRequest {
 	private List<String> nameFeature;
 	private String allowsTrace;
 	private String browser;
+	private boolean stopExecution;
 	private List<String> aplicationType;
 	private List<Integer> iterations;
 	private boolean testError;
@@ -77,6 +78,14 @@ public class CaseForAutomationRequest {
 
 	public String getBrowser(){
 		return browser;
+	}
+
+	public void setStopExecution(boolean stopExecution){
+		this.stopExecution = stopExecution;
+	}
+
+	public boolean isStopExecution(){
+		return stopExecution;
 	}
 
 	public void setAplicationType(List<String> aplicationType){

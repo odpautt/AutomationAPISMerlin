@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<testsuite name="Sanity Merlin Json" time="102.93" tests="1" errors="0" skipped="0" failures="1" timestamp="2022-04-21 12:23:54"><testcase name="se requiere ejecutar el Json"><failure message="Finaliza de manera Exitosa la automatizacion&#xA;Expected: &quot;Exitoso&quot;&#xA;     but: was &quot;Fallido&quot;" type="java.lang.AssertionError">Finaliza de manera Exitosa la automatizacion
+<testsuite name="Sanity Merlin Json" time="203.61" tests="1" errors="0" skipped="0" failures="1" timestamp="2022-04-22 11:56:25"><testcase name="se requiere ejecutar el Json"><failure message="Finaliza de manera Exitosa la automatizacion&#xA;Expected: &quot;Exitoso&quot;&#xA;     but: was &quot;Fallido&quot;" type="java.lang.AssertionError">Finaliza de manera Exitosa la automatizacion
 Expected: "Exitoso"
      but: was "Fallido"</failure><system-err>Finaliza de manera Exitosa la automatizacion
 Expected: "Exitoso"
