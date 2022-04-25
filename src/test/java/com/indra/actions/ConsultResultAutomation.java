@@ -22,7 +22,6 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
 
     public void consultResultOfAutomation() throws InterruptedException, Exception {
 
-    try {
         resultResponse = consultResultsServices(token, idExecution);
         String status = from(resultResponse).get("executionStatus");
         String result;
@@ -38,14 +37,13 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         urlEvidenceEvidenceComplete = from(resultResponse).get("urlEvidenceEvidenceComplete");
         urlEvidenceSox = from(resultResponse).get("urlEvidenceSox");
 
-        assertThat("Finaliza de manera Exitosa la automatizacion", result, equalTo("Exitoso"));
-        TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_PASSED);
-        Matcher matcher;
-
-    }
-    catch (Exception e){
-        TestLinkIntegration.updateResults("test1",e.getMessage(), TestLinkAPIResults.TEST_FAILED);
-    }
+        if (result.equals("Exitoso")) {
+           // assertThat("Finaliza de manera Exitosa la automatizacion", result, equalTo("Exitoso"));
+            TestLinkIntegration.updateResults("test1", null, TestLinkAPIResults.TEST_PASSED);
+        }
+         else{
+        TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_FAILED);
+        }
 
     }
 
