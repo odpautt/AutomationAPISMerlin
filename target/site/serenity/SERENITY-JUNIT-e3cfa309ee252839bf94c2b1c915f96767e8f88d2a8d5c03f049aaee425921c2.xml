@@ -1,2 +1,2 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<testsuite name="Sanity Merlin Json" time="203.71" tests="1" errors="0" skipped="0" failures="0" timestamp="2022-04-25 03:02:19"><testcase name="se requiere ejecutar el Json"/></testsuite>
+<testsuite name="Sanity Merlin Json" time="103.63" tests="1" errors="0" skipped="0" failures="0" timestamp="2022-04-25 03:48:08"><testcase name="se requiere ejecutar el Json"/></testsuite>
