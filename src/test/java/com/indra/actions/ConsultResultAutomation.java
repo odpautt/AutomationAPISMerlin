@@ -38,11 +38,13 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         urlEvidenceSox = from(resultResponse).get("urlEvidenceSox");
 
         if (result.equals("Exitoso")) {
+            System.out.println("Finaliza de manera Exitosa");
            // assertThat("Finaliza de manera Exitosa la automatizacion", result, equalTo("Exitoso"));
-            TestLinkIntegration.updateResults("test1", null, TestLinkAPIResults.TEST_PASSED);
+            TestLinkIntegration.updateResults("test1", null, TestLinkAPIResults.TEST_FAILED);
         }
          else{
-        TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_FAILED);
+        TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_PASSED);
+            System.out.println("Ejecucion Fallida");
         }
 
     }
