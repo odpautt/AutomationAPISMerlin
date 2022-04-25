@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="com.indra.runners.SanityRunners" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="22LAP5CD1195R94" time="0.0">
   <properties/>
-  <system-out><![CDATA[11:56:25.471 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+  <system-out><![CDATA[15:02:19.851 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -18,9 +18,9 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 
-11:56:25.478 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@ba611da8
-11:56:25.480 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Sanity Merlin Json
-11:56:25.513 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+15:02:19.858 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@ba611da8
+15:02:19.858 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Sanity Merlin Json
+15:02:19.895 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -30,59 +30,48 @@
 
 TEST STARTED: se requiere ejecutar el Json
 -------------------------------------------------------------------(sanity-merlin-json;se-requiere-ejecutar-el-json)
-11:56:25.558 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
-11:56:25.559 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
-11:59:49.249 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
-11:59:49.388 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
-11:59:49.400 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@c432c34
-11:59:49.404 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Merlin Json:se requiere ejecutar el Json
-11:59:49.405 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@c432c34: Generating report for test outcome: Sanity Merlin Json:se requiere ejecutar el Json
-11:59:49.417 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for se requiere ejecutar el Json to file C:\MerlinJsonAutomation\target\site\serenity\e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2.json (using temp file C:\MerlinJsonAutomation\target\site\serenity\e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2.json59f4d700-3044-4354-933c-2f9e835993b9)
-11:59:49.466 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Merlin Json:se requiere ejecutar el Json done
-11:59:49.466 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
-11:59:49.467 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 66 ms
-11:59:49.467 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@512ddfdb
-11:59:49.468 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Merlin Json:se requiere ejecutar el Json
-11:59:49.468 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@512ddfdb: Generating report for test outcome: Sanity Merlin Json:se requiere ejecutar el Json
-11:59:49.469 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR se requiere ejecutar el Json in e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2
-11:59:49.501 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
-11:59:49.502 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
-11:59:49.504 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[Requirement{name='Sanity Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
-11:59:49.514 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome se requiere ejecutar el Json-[]: Optional[Requirement{name='Sanity Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
-11:59:49.517 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome se requiere ejecutar el Json-[]: Optional[Requirement{name='Sanity Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
-11:59:49.570 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61606<->10.69.42.60:8089 closed
-11:59:49.571 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61599<->10.69.42.60:8089 closed
-11:59:49.572 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61586<->10.69.42.60:8089 closed
-11:59:49.573 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61575<->10.69.42.60:8089 closed
-11:59:49.575 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61564<->10.69.42.60:8089 closed
-11:59:49.576 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61550<->10.69.42.60:8089 closed
-11:59:49.577 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61543<->10.69.42.60:8089 closed
-11:59:49.578 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61536<->10.69.42.60:8089 closed
-11:59:49.579 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61525<->10.69.42.60:8089 closed
-11:59:49.581 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61511<->10.69.42.60:8089 closed
-11:59:49.582 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61491<->10.69.42.60:8089 closed
-11:59:49.582 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61490<->10.69.42.60:8089 closed
-11:59:49.651 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Sanity Merlin Json:se requiere ejecutar el Json in e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2.html in directory C:\MerlinJsonAutomation\target\site\serenity  
-11:59:49.659 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2.html
-11:59:50.196 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2.html in 537 ms
-11:59:50.196 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Merlin Json:se requiere ejecutar el Json done
-11:59:50.196 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
-11:59:50.196 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 729 ms
+15:02:19.935 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+15:02:19.935 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+15:05:43.607 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+15:05:43.655 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+15:05:43.655 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@2eba2317
+15:05:43.655 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Merlin Json:se requiere ejecutar el Json
+15:05:43.655 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@2eba2317: Generating report for test outcome: Sanity Merlin Json:se requiere ejecutar el Json
+15:05:43.671 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for se requiere ejecutar el Json to file C:\MerlinJsonAutomation\target\site\serenity\e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2.json (using temp file C:\MerlinJsonAutomation\target\site\serenity\e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2.jsondd1a804a-3823-40d0-abd9-740db3b8a32e)
+15:05:43.703 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Merlin Json:se requiere ejecutar el Json done
+15:05:43.703 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+15:05:43.703 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 48 ms
+15:05:43.703 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@11027218
+15:05:43.703 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Merlin Json:se requiere ejecutar el Json
+15:05:43.703 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@11027218: Generating report for test outcome: Sanity Merlin Json:se requiere ejecutar el Json
+15:05:43.703 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR se requiere ejecutar el Json in e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2
+15:05:43.707 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+15:05:43.707 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+15:05:43.707 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[Requirement{name='Sanity Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
+15:05:43.723 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome se requiere ejecutar el Json-[]: Optional[Requirement{name='Sanity Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
+15:05:43.723 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome se requiere ejecutar el Json-[]: Optional[Requirement{name='Sanity Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
+15:05:43.753 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63122<->10.69.42.60:8089 closed
+15:05:43.762 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63046<->10.69.42.60:8089 closed
+15:05:43.762 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63045<->10.69.42.60:8089 closed
+15:05:43.765 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63143<->10.69.42.60:8089 closed
+15:05:43.765 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63136<->10.69.42.60:8089 closed
+15:05:43.768 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63115<->10.69.42.60:8089 closed
+15:05:43.769 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63106<->10.69.42.60:8089 closed
+15:05:43.769 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63097<->10.69.42.60:8089 closed
+15:05:43.770 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63087<->10.69.42.60:8089 closed
+15:05:43.771 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63079<->10.69.42.60:8089 closed
+15:05:43.771 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63065<->10.69.42.60:8089 closed
+15:05:43.773 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:63054<->10.69.42.60:8089 closed
+15:05:43.807 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Sanity Merlin Json:se requiere ejecutar el Json in e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2.html in directory C:\MerlinJsonAutomation\target\site\serenity  
+15:05:43.807 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2.html
+15:05:44.119 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report e3cfa309ee252839bf94c2b1c915f96767e8f88d2a8d5c03f049aaee425921c2.html in 312 ms
+15:05:44.119 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Merlin Json:se requiere ejecutar el Json done
+15:05:44.120 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+15:05:44.120 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 417 ms
 
-?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/execute.feature:7 ?[0m# se requiere ejecutar el Json
-
-1 Scenarios (?[31m1 failed?[0m)
-3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
-3m23,928s
-
-java.lang.AssertionError: Finaliza de manera Exitosa la automatizacion
-Expected: "Exitoso"
-     but: was "Fallido"
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at com.indra.actions.ConsultResultAutomation.consultResultOfAutomation(ConsultResultAutomation.java:36)
-	at com.indra.steps_definitions.SanitySteps.seObtieneLaRespuestaDeLaEjecucionDelJson(SanitySteps.java:31)
-	at ?.Se obtiene la respuesta de la ejecucion del json(src/test/resources/features/execute.feature:10)
+1 Scenarios (?[32m1 passed?[0m)
+3 Steps (?[32m3 passed?[0m)
+3m23,905s
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

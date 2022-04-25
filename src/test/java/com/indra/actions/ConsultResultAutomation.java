@@ -1,7 +1,11 @@
 package com.indra.actions;
 
 
+import org.hamcrest.Matcher;
+import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
+import testlink.api.java.client.TestLinkAPIException;
+import testlink.api.java.client.TestLinkAPIResults;
 
 import static io.restassured.path.json.JsonPath.from;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -16,13 +20,14 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
     public String urlEvidenceEvidenceComplete;
     public String urlEvidenceSox;
 
-    public void consultResultOfAutomation() throws InterruptedException {
+    public void consultResultOfAutomation() throws InterruptedException, Exception {
 
+    try {
         resultResponse = consultResultsServices(token, idExecution);
         String status = from(resultResponse).get("executionStatus");
         String result;
 
-        while(!status.equals("Terminado")) {
+        while (!status.equals("Terminado")) {
             Thread.sleep(20000);
             resultResponse = consultResultsServices(token, idExecution);
 
@@ -33,8 +38,14 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         urlEvidenceEvidenceComplete = from(resultResponse).get("urlEvidenceEvidenceComplete");
         urlEvidenceSox = from(resultResponse).get("urlEvidenceSox");
 
-        assertThat("Finaliza de manera Exitosa la automatizacion",result, equalTo("Fallido"));
-        
+        assertThat("Finaliza de manera Exitosa la automatizacion", result, equalTo("Exitoso"));
+        TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_PASSED);
+        Matcher matcher;
+
+    }
+    catch (Exception e){
+        TestLinkIntegration.updateResults("test1",e.getMessage(), TestLinkAPIResults.TEST_FAILED);
+    }
 
     }
 
