@@ -43,10 +43,14 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
             TestLinkIntegration.updateResults("test1", null, TestLinkAPIResults.TEST_FAILED);
         }
          else{
-        TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_PASSED);
+        TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_FAILED);
             System.out.println("Ejecucion Fallida");
         }
 
+    }
+
+    public void testTestlink() throws TestLinkAPIException {
+        TestLinkIntegration.updateResults("calendario1", null, TestLinkAPIResults.TEST_FAILED);
     }
 
     public void ExecuteAutomation(){

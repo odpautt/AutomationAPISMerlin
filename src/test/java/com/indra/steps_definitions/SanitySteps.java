@@ -26,14 +26,13 @@ public class SanitySteps {
 
     @When("^se ejecuta el json configurado$")
     public void seEjecutaElJsonConfigurado() {
-       resultAutomation.ExecuteAutomation();
+       //resultAutomation.ExecuteAutomation();
     }
 
     @Then("^Se obtiene la respuesta de la ejecucion del json$")
     public void seObtieneLaRespuestaDeLaEjecucionDelJson() throws InterruptedException, Exception {
-        resultAutomation.consultResultOfAutomation();
-
-
+        //resultAutomation.consultResultOfAutomation();
+        resultAutomation.testTestlink();
     }
 
 
