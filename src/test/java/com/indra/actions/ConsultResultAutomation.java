@@ -50,7 +50,7 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
     }
 
     public void testTestlink() throws TestLinkAPIException {
-        TestLinkIntegration.updateResults("calendario1", null, TestLinkAPIResults.TEST_FAILED);
+        TestLinkIntegration.updateResults("calendario1", null, TestLinkAPIResults.TEST_PASSED);
     }
 
     public void ExecuteAutomation(){
