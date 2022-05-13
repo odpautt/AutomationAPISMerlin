@@ -27,11 +27,14 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         String status = from(resultResponse).get("executionStatus");
         String result;
 
+        int contador=0;
         while (!status.equals("Terminado")) {
-            Thread.sleep(20000);
+            Thread.sleep(9990);
             resultResponse = consultResultsServices(token, idExecution);
 
             status = from(resultResponse).get("executionStatus");
+            contador++;
+
         }
         result = from(resultResponse).get("result[0]");
         urlEvidenceSerenity = from(resultResponse).get("urlEvidenceSerenity");
