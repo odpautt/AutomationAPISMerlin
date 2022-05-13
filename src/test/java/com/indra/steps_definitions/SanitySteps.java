@@ -32,7 +32,7 @@ public class SanitySteps {
     @Then("^Se obtiene la respuesta de la ejecucion del json$")
     public void seObtieneLaRespuestaDeLaEjecucionDelJson() throws InterruptedException, Exception {
         resultAutomation.consultResultOfAutomation();
-        System.out.println(resultAutomation.consultResultOfAutomation());
+        System.out.println("\n\n"+resultAutomation.consultResultOfAutomation()+"\n\n");
         //resultAutomation.testTestlink();
     }
 
