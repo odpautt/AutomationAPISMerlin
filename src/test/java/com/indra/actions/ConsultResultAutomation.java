@@ -1,15 +1,14 @@
 package com.indra.actions;
 
 
-import org.hamcrest.Matcher;
-import org.hamcrest.MatcherAssert;
-import org.hamcrest.Matchers;
 import testlink.api.java.client.TestLinkAPIException;
 import testlink.api.java.client.TestLinkAPIResults;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static io.restassured.path.json.JsonPath.from;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
 
 public class ConsultResultAutomation extends ExecuteServicesRestActions {
 
@@ -20,7 +19,9 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
     public String urlEvidenceEvidenceComplete;
     public String urlEvidenceSox;
 
-    public void consultResultOfAutomation() throws InterruptedException, Exception {
+
+    public List<String> consultResultOfAutomation() throws InterruptedException, Exception {
+        List<String> stringList = new ArrayList<>();
 
         resultResponse = consultResultsServices(token, idExecution);
         String status = from(resultResponse).get("executionStatus");
@@ -40,13 +41,19 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         if (result.equals("Exitoso")) {
             System.out.println("Finaliza de manera Exitosa");
            // assertThat("Finaliza de manera Exitosa la automatizacion", result, equalTo("Exitoso"));
-            TestLinkIntegration.updateResults("test1", null, TestLinkAPIResults.TEST_FAILED);
+
+            //TestLinkIntegration.updateResults("test1", null, TestLinkAPIResults.TEST_FAILED);
+
         }
          else{
-        TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_FAILED);
+        //TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_FAILED);
             System.out.println("Ejecucion Fallida");
         }
+         stringList.add(urlEvidenceSerenity);
+         stringList.add(urlEvidenceEvidenceComplete);
+         stringList.add(urlEvidenceSox);
 
+         return stringList;
     }
 
     public void testTestlink() throws TestLinkAPIException {

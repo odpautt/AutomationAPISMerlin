@@ -17,22 +17,23 @@ public class SanitySteps {
     WebDriver driver;
 
     ConsultResultAutomation resultAutomation = new ConsultResultAutomation();
+    ApisTestPojo apisTestPojo = new ApisTestPojo();
 
     @Given("^se realiza la configuracion del Json$")
     public void seRealizaLaConfiguracionDelJson() {
-        //ApisTestPojo apisTestPojo = new ApisTestPojo();
-        //apisTestPojo.getAuthenticateTokenAPI("as");
+        apisTestPojo.getAuthenticateTokenAPI("as");
     }
 
     @When("^se ejecuta el json configurado$")
     public void seEjecutaElJsonConfigurado() {
-       //resultAutomation.ExecuteAutomation();
+        resultAutomation.ExecuteAutomation();
     }
 
     @Then("^Se obtiene la respuesta de la ejecucion del json$")
     public void seObtieneLaRespuestaDeLaEjecucionDelJson() throws InterruptedException, Exception {
-        //resultAutomation.consultResultOfAutomation();
-        resultAutomation.testTestlink();
+        resultAutomation.consultResultOfAutomation();
+        System.out.println(resultAutomation.consultResultOfAutomation());
+        //resultAutomation.testTestlink();
     }
 
 
