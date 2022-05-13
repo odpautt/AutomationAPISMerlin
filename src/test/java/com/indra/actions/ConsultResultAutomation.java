@@ -27,11 +27,14 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         String status = from(resultResponse).get("executionStatus");
         String result;
 
+
         while (!status.equals("Terminado")) {
-            Thread.sleep(20000);
+            Thread.sleep(9990);
             resultResponse = consultResultsServices(token, idExecution);
 
             status = from(resultResponse).get("executionStatus");
+
+
         }
         result = from(resultResponse).get("result[0]");
         urlEvidenceSerenity = from(resultResponse).get("urlEvidenceSerenity");
@@ -39,7 +42,7 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         urlEvidenceSox = from(resultResponse).get("urlEvidenceSox");
 
         if (result.equals("Exitoso")) {
-            System.out.println("Finaliza de manera Exitosa");
+            System.out.println("\n\nFinaliza de manera Exitosa\n\n");
            // assertThat("Finaliza de manera Exitosa la automatizacion", result, equalTo("Exitoso"));
 
             //TestLinkIntegration.updateResults("test1", null, TestLinkAPIResults.TEST_FAILED);
@@ -47,8 +50,9 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         }
          else{
         //TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_FAILED);
-            System.out.println("Ejecucion Fallida");
+            System.out.println("\n\nEjecucion Fallida\n\n");
         }
+         stringList.add(idExecution);
          stringList.add(urlEvidenceSerenity);
          stringList.add(urlEvidenceEvidenceComplete);
          stringList.add(urlEvidenceSox);

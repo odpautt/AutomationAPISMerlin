@@ -11,6 +11,7 @@ public class ExecuteServicesRestActions {
 
 
     public String getAuthenticateToken(String URL){
+        System.out.println("\n\nSe ejecuta API de Generacion del Token\n\n");
         String token =
                  given()
                          .contentType(ContentType.JSON)
@@ -30,6 +31,7 @@ public class ExecuteServicesRestActions {
     }
 
     public String executeAutomationServices(String URL, String token){
+        System.out.println("\n\nSe ejecuta API Automatización\n\n");
         String response =
                 given().auth().oauth2(token)
                         .contentType(ContentType.JSON)
@@ -75,6 +77,7 @@ public class ExecuteServicesRestActions {
     }
 
     public String consultResultsServices(String token,String idExecution){
+        System.out.println("\n\n Se ejecuta API de Consulta de Resultado \n\n");
         String response =
                 given().auth().oauth2(token)
                 .contentType(ContentType.JSON)
