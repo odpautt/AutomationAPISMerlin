@@ -52,6 +52,7 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         //TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_FAILED);
             System.out.println("Ejecucion Fallida");
         }
+         stringList.add(idExecution);
          stringList.add(urlEvidenceSerenity);
          stringList.add(urlEvidenceEvidenceComplete);
          stringList.add(urlEvidenceSox);
