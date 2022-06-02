@@ -9,8 +9,9 @@ import java.util.List;
 
 import static io.restassured.path.json.JsonPath.from;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
-public class ConsultResultAutomation extends ExecuteServicesRestActions {
+public class ConsultResultAutomationActions extends ExecuteServicesRestActions {
 
     public String token;
     public String idExecution;
@@ -42,15 +43,16 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         urlEvidenceSox = from(resultResponse).get("urlEvidenceSox");
 
         if (result.equals("Exitoso")) {
+
+            assertThat("Finaliza de manera Exitosa la automatizacion", result, equalTo("Exitoso"));
             System.out.println("\n\nFinaliza de manera Exitosa\n\n");
-           // assertThat("Finaliza de manera Exitosa la automatizacion", result, equalTo("Exitoso"));
-
             //TestLinkIntegration.updateResults("test1", null, TestLinkAPIResults.TEST_FAILED);
-
         }
          else{
+
         //TestLinkIntegration.updateResults("test1",null, TestLinkAPIResults.TEST_FAILED);
             System.out.println("\n\nEjecucion Fallida\n\n");
+            assertThat("Finaliza de manera Exitosa la automatizacion", result, equalTo("Exitoso"));
         }
          stringList.add(idExecution);
          stringList.add(urlEvidenceSerenity);
@@ -64,8 +66,8 @@ public class ConsultResultAutomation extends ExecuteServicesRestActions {
         TestLinkIntegration.updateResults("calendario1", null, TestLinkAPIResults.TEST_PASSED);
     }
 
-    public void ExecuteAutomation(){
+    public void ExecuteAutomation(String request){
        token = getAuthenticateToken("http://10.69.42.60:8089/api/authenticate-api");
-       idExecution = executeAutomationServices("http://10.69.42.60:8089/api/external-automation",token);
+       idExecution = executeAutomationServices("http://10.69.42.60:8089/api/external-automation",token,request);
     }
 }

@@ -1,2 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Sanity Merlin Json","se requiere ejecutar el Json","ERROR","2022-05-10T09:55:15.455-05:00[America/Bogota]","0.0","22.75"
+"Sanity Merlin Json","se requiere ejecutar el Json","FAILURE","2022-05-17T09:33:52.496-05:00[America/Bogota]","0.0","204.56"
+"Sanity Apis Merlin Json","Realizar Cesion de Contrato con Nit a Nit + migración de plan a un Postpago Empresarial 5.3","ERROR","2022-05-17T11:28:25.842-05:00[America/Bogota]","0.0","0.92"
+"Sanity Apis Merlin Json","se requiere ejecutar Reconexion 430","ERROR","2022-05-19T07:56:04.012-05:00[America/Bogota]","0.0","22.86"

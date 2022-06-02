@@ -1,0 +1,9 @@
+﻿nombrecaso;url;usuario;contraseña;msisdn;nit;cedulavendedor;ipservidor:puerto
+Cancelacion por solicitud;;;;;;
+Reconexion 430;http://10.69.60.140:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CP1112792576;Tigo.2022*;3045981670;;;
+Realizar Cancelación de roaming Linea Postpago 5,2;;;;;;;
+Realizar Cesion de Contrato con Nit a Nit + migración de plan a un Postpago Empresarial 5.3 ;;;;;;;
+Cambio de Pospago a Pospago Generico;;;;;;;
+Cambio de Chip (imsi);;;;;;;
+Suspensión Robo Perdida en linea portada;;;;;;;
+Reconexión Robo Perdida en linea portada;http://10.69.60.140:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CP1112792576;Tigo.2022*;3046010569;;;
