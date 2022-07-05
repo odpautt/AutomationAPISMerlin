@@ -175,7 +175,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-07-2022 16:25</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-07-2022 17:33</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -191,8 +191,8 @@
                             <div class="test-count-summary">
                                 <div>
 
-                                2 tests
-                                    across 2 scenarios
+                                4 tests
+                                    across 4 scenarios
 
                                      |
                                         <a href="b964a040ccee2192880812cc5de2c4d0075e3288c1b298b7dda0839367bb26be.csv" title="Download CSV"> <i class="fa fa-download"
@@ -231,10 +231,10 @@
                                                             </div>
                                                             <script>
 
-                                                                var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' ', ' ', ' '];
+                                                                var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '25%', ' ', '75%', ' ', ' ', ' '];
                                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 2}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 3}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                                 // as you saw in the previous example
@@ -325,15 +325,15 @@
                                                                         <a href="da5b0c51b332adf0ef993a9f086d6a1b51a3d800248ec6ae281212092f35bd37.html"><i
                                                                                 class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
                                                                     </td>
-                                                                <td class="automated-stats">2</td>
-                                                                <td class="automated-stats">100%</td>
+                                                                <td class="automated-stats">1</td>
+                                                                <td class="automated-stats">25%</td>
                                                             <tr>
-                                                                <td class="aggregate-result-count indented-error-category">
-                                                                    <i
-                                                                            class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken
-                                                                </td>
-                                                                <td class="automated-stats">0</td>
-                                                                <td class="automated-stats"> </td>
+                                                                    <td class="aggregate-result-count indented-error-category">
+                                                                        <a href="c8a926210aeff57f8aa7ea799262d4b730915a909cd5ecd6a705b1fa13bc7aa8.html"><i
+                                                                                class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken</a>
+                                                                    </td>
+                                                                <td class="automated-stats">3</td>
+                                                                <td class="automated-stats">75%</td>
                                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -344,7 +344,7 @@
                                                             </tr>
                                                             <tr class="summary-stats">
                                                                 <td class="aggregate-result-count">Total</td>
-                                                                <td class="automated-stats">2</td>
+                                                                <td class="automated-stats">4</td>
                                                                 <td class="automated-stats"></td>
                                                             </tr>
                                                             </tbody>
@@ -363,11 +363,27 @@
                                                         <table class="table">
                                                             <tbody>
                                                             <tr>
+                                                                <td class="error-color top-list-title">
+                                                                    <a href="d6bd40ff70b9aaa654cda8197b1007d6f1029a5feced391460eb19d2d72b6c32.html"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> Illegal argument exception</a>
+                                                                </td>
+                                                                <td><span
+                                                                        class="badge failure-badge">2</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
                                                                 <td class="failure-color top-list-title">
                                                                     <a href="a0ace456df350117335ad374e8d62c0d8c978db868ea1469e0c5ba32aac965ea.html"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> Assertion error</a>
                                                                 </td>
                                                                 <td><span
-                                                                        class="badge failure-badge">2</span>
+                                                                        class="badge failure-badge">1</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="error-color top-list-title">
+                                                                    <a href="dfe733fd4ecefb13224809fb618336fd4992fe4c1ccf322f62ef786fa474e8a9.html"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> Connect exception</a>
+                                                                </td>
+                                                                <td><span
+                                                                        class="badge failure-badge">1</span>
                                                                 </td>
                                                             </tr>
                                                             </tbody>
@@ -379,7 +395,7 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td class="failure-color top-list-title"><a
-                                                                            href="961acd643c8ef5948af3b2a9a51d1ff78f7fdc91377688c54b34cd01be7ccb53.html">Sanity Merlin Json</a>
+                                                                            href="961acd643c8ef5948af3b2a9a51d1ff78f7fdc91377688c54b34cd01be7ccb53.html">Sanity Apis Merlin Json</a>
                                                                     </td>
                                                                     <td><span
                                                                             class="badge failure-badge">100%</span>
@@ -387,7 +403,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td class="failure-color top-list-title"><a
-                                                                            href="961acd643c8ef5948af3b2a9a51d1ff78f7fdc91377688c54b34cd01be7ccb53.html">Sanity Apis Merlin Json</a>
+                                                                            href="961acd643c8ef5948af3b2a9a51d1ff78f7fdc91377688c54b34cd01be7ccb53.html">Sanity Merlin Json</a>
                                                                     </td>
                                                                     <td><span
                                                                             class="badge failure-badge">100%</span>
@@ -407,18 +423,28 @@
                                                                 <div>
                                                                     <a href="24aacda3e479b17aef4c2fafa3fb6f2fcac1704edab883a1848f7adc3af41546.html">
                                                                         <span class="badge"
-                                                                              style="background-color:#f8001f; margin:1em;padding:4px;"><i
-                                                                                class="fa fa-tag"></i> Test&nbsp;&nbsp;&nbsp;2</span>
+                                                                              style="background-color:darkorange; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Test&nbsp;&nbsp;&nbsp;4</span>
                                                                     </a>
                                                                     <a href="0ee433048f4435209f151f449b731f154cc076bf2ffa569dda708ed525aefbe4.html">
                                                                         <span class="badge"
                                                                               style="background-color:#f8001f; margin:1em;padding:4px;"><i
                                                                                 class="fa fa-tag"></i> Caso1&nbsp;&nbsp;&nbsp;1</span>
                                                                     </a>
-                                                                    <a href="f0cea4598ad18239a1ddf8907dbd26d92eb7b69801780616189d4df9a5eed15a.html">
+                                                                    <a href="ab87d8a7fe724e0ca043ca46737297642d64eef2c988511e0924eaca60477216.html">
                                                                         <span class="badge"
-                                                                              style="background-color:#f8001f; margin:1em;padding:4px;"><i
-                                                                                class="fa fa-tag"></i> Caso11&nbsp;&nbsp;&nbsp;1</span>
+                                                                              style="background-color:darkorange; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Caso4&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="8465f1f005e096d388fce3e7cb5684102baf77cc7413cbb303e7d6166301e2f8.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:darkorange; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Caso2&nbsp;&nbsp;&nbsp;1</span>
+                                                                    </a>
+                                                                    <a href="a47573ea3513ff3c4dc351c2802a123db4deffb48439fc89af5f499395791df7.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:darkorange; margin:1em;padding:4px;"><i
+                                                                                class="fa fa-tag"></i> Caso3&nbsp;&nbsp;&nbsp;1</span>
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -458,18 +484,44 @@
                                                     <td><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
                                                             style="display:none">FAILURE</span></td>
                                                 </tr>
-                                                <tr class="scenario-result FAILURE">
+                                                <tr class="scenario-result ERROR">
                                                     <td>
                                                             <a href="8664e375dacf3c4e54db5d1fdd965d9fff1e92d34964f94c7f23b8f6b525c61d.html">Sanity Apis Merlin Json</a>
                                                     </td>
                                                     <td>
-                                                        <a href="6864308fb66fdbfeee10d63a2e7e1b93a71445575d27eebb7b3dc73dd465324b.html">Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion</a>
+                                                        <a href="7ef7cb72c25bd62e148b326cac9e8ad10d730005767a480e9a471859249183b9.html">Realizar Cesion de Contrato con Nit a Nit + migración de plan a un Postpago Empresarial 5.3</a>
                                                     </td>
                                                     <td>3</td>
-                                                    <td>16:19:50</td>
-                                                    <td>5m 27s</td>
-                                                    <td><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
-                                                            style="display:none">FAILURE</span></td>
+                                                    <td>11:28:25</td>
+                                                    <td>917ms</td>
+                                                    <td><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> <span
+                                                            style="display:none">ERROR</span></td>
+                                                </tr>
+                                                <tr class="scenario-result ERROR">
+                                                    <td>
+                                                            <a href="8664e375dacf3c4e54db5d1fdd965d9fff1e92d34964f94c7f23b8f6b525c61d.html">Sanity Apis Merlin Json</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="e38822228641eb39bd16984ca3f9cc39ffe79e46ddb1b52683b5a74253c43803.html">se requiere ejecutar Reconexion 430</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>07:56:04</td>
+                                                    <td>22s 859ms</td>
+                                                    <td><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> <span
+                                                            style="display:none">ERROR</span></td>
+                                                </tr>
+                                                <tr class="scenario-result ERROR">
+                                                    <td>
+                                                            <a href="8664e375dacf3c4e54db5d1fdd965d9fff1e92d34964f94c7f23b8f6b525c61d.html">Sanity Apis Merlin Json</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="5e16ccdbe571e40b40957b99a388054697848bc2b032440c46fa05aba5544c7f.html">Realizar Cancelación de roaming Linea Postpago 5,2</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>09:21:45</td>
+                                                    <td>1s 138ms</td>
+                                                    <td><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> <span
+                                                            style="display:none">ERROR</span></td>
                                                 </tr>
                                                 </tbody>
                                             </table>

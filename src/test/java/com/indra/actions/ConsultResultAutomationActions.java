@@ -23,20 +23,24 @@ public class ConsultResultAutomationActions extends ExecuteServicesRestActions {
 
     public List<String> consultResultOfAutomation() throws InterruptedException, Exception {
         List<String> stringList = new ArrayList<>();
-
+        int pendiente = 0;
+        int  contador = 0;
         resultResponse = consultResultsServices(token, idExecution);
         String status = from(resultResponse).get("executionStatus");
         String result;
 
 
-        while (!status.equals("Terminado")) {
+        while (!status.equals("Terminado") && !(pendiente == 1)) {
             Thread.sleep(9990);
             resultResponse = consultResultsServices(token, idExecution);
 
             status = from(resultResponse).get("executionStatus");
 
-
+            if (contador == 91) {
+                pendiente = 1;
+            }
         }
+
         result = from(resultResponse).get("result[0]");
         urlEvidenceSerenity = from(resultResponse).get("urlEvidenceSerenity");
         urlEvidenceEvidenceComplete = from(resultResponse).get("urlEvidenceEvidenceComplete");

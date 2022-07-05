@@ -1,2 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
 "Sanity Merlin Json","se requiere ejecutar el Json","FAILURE","2022-05-17T09:33:52.496-05:00[America/Bogota]","0.0","204.56"
+"Sanity Apis Merlin Json","se requiere ejecutar Cancelacion por solicitud","SUCCESS","2022-05-17T11:37:13.418-05:00[America/Bogota]","0.0","0.21"

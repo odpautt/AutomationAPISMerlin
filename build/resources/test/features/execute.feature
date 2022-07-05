@@ -69,3 +69,7 @@ Feature: Sanity Apis Merlin Json
     When se ejecuta la api configurado para la ejecucion de la automatizacion caso once
     Then Se obtiene la respuesta de la ejecucion de la automatizacion
 
+  @prueba
+  Scenario: prueba
+    Given tets
+
