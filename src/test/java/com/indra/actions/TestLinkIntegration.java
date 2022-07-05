@@ -6,7 +6,7 @@ import testlink.api.java.client.TestLinkAPIException;
 public class TestLinkIntegration {
     //docker
 /*
-    public static final String TESTLINK_KEY="a02d7567fcab66d25dbb13536019a4f6";  // "27512226ed15126c18fca57818b72637";// "63a1847ead51525c1d87f5ee0c9fbda8";
+    public static final String TESTLINK_KEY="43fd3605032c0d7f05bf99d3e820a53e";  // "27512226ed15126c18fca57818b72637";// "63a1847ead51525c1d87f5ee0c9fbda8";
     public static final String TESTLINK_URL="http://localhost/lib/api/xmlrpc/v1/xmlrpc.php"; //"http://testlink.tigoune.com/var/www/html/testlink-code-1.9.16/lib/api/xmlrpc.php";
     public static final String TEST_PROJECT_NAME="TestAutomation"; //"Proyecto_2_Prueba_Automatico
     public static final String TEST_PLAN_NAME="SampleTestPlan"; //  TestPlan_SeleniumAutomation

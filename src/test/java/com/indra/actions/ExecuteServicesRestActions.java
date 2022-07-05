@@ -16,8 +16,8 @@ public class ExecuteServicesRestActions {
                  given()
                          .contentType(ContentType.JSON)
                          .body("{\n" +
-                                "    \"username\": \"Orlando.Pautt\",\n" +
-                                "    \"password\": \"OrlandoDar.12*\"\n" +
+                                "    \"username\": \"Natalia.Rios\",\n" +
+                                "    \"password\": \"NataliaRio.11-\"\n" +
                                 "}")
                          .post(URL)
                          .then()

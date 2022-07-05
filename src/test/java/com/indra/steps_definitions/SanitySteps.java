@@ -23,7 +23,7 @@ public class SanitySteps {
 
     @When("^se ejecuta la api configurada para la ejecucion de la automatizacion caso uno$")
     public void seEjecutaLaApiConfiguradaParaLaEjecucionDeLaAutomatizacionCaso() {
-       //resultAutomation.ExecuteAutomation(testCasesActions.CancelacionPorSolicitud());
+       resultAutomation.ExecuteAutomation(testCasesActions.CancelacionPorSolicitud());
     }
 
     @Then("^Se obtiene la respuesta de la ejecucion de la automatizacion$")
@@ -31,7 +31,6 @@ public class SanitySteps {
         resultAutomation.consultResultOfAutomation();
         System.out.println("\n\n"+resultAutomation.consultResultOfAutomation()+"\n\n");
     }
-
 
 
     // caso 2
@@ -44,12 +43,15 @@ public class SanitySteps {
 
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso tres$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoTres() {
-
+        resultAutomation.ExecuteAutomation(testCasesActions.RealizarCancelacionDeRoamingLineaPostpago5_2());
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
     }
+
 
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso cuatro$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoCuatro() {
-
+        resultAutomation.ExecuteAutomation(testCasesActions.CambioDePospagoAPospagoGenerico());
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
     }
 
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso cinco$")
@@ -59,43 +61,42 @@ public class SanitySteps {
 
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso seis$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoSeis() {
-
+        resultAutomation.ExecuteAutomation(testCasesActions.SuspensionRoboPerdidaEnLineaPortada());
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles(""));
     }
 
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso siete$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoSiete() {
+        resultAutomation.ExecuteAutomation(testCasesActions.ReconexionRoboPerdidaEnLineaPortada());
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
 
     }
 
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso ocho$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoOcho() {
-
+        resultAutomation.ExecuteAutomation(testCasesActions.CambioDePlanDePostpagoEmpresarial5_3APostpagoEmpresarial5_1());
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
     }
 
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso nueve$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoNueve() {
+        resultAutomation.ExecuteAutomation(testCasesActions.RealizarActivacionDeRoamingLineaPostpago5_2());
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
+    }
 
+    @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso diez$")
+    public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoDiez() {
+        resultAutomation.ExecuteAutomation(testCasesActions.CambioDePlanDePostpagoEmpresarial5_1APostpagoEmpresarial5_1Plus());
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
     }
 
 
+    @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso once$")
+    public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoOnce() {
+        resultAutomation.ExecuteAutomation(testCasesActions.CatalogoAtp_GestionCuentas_Suscripcion_Ejecucion());
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
     @Given("^se realiza la configuracion del Json$")
@@ -137,19 +138,12 @@ public class SanitySteps {
                 "}");
     }
 
-    @Then("^Se obtiene la respuesta de la ejecucion del json$")
-    public void seObtieneLaRespuestaDeLaEjecucionDelJson() throws InterruptedException, Exception {
-        resultAutomation.consultResultOfAutomation();
-        System.out.println("\n\n"+resultAutomation.consultResultOfAutomation()+"\n\n");
-        //resultAutomation.testTestlink();
-    }
-
-    @Given("^otro$")
-    public void otro() {
-        TestCasesActions testCasesActions = new TestCasesActions();
-
-        testCasesActions.ejecutar();
-    }
+//    @Then("^Se obtiene la respuesta de la ejecucion del json$")
+//    public void seObtieneLaRespuestaDeLaEjecucionDelJson() throws InterruptedException, Exception {
+//        resultAutomation.consultResultOfAutomation();
+//        System.out.println("\n\n"+resultAutomation.consultResultOfAutomation()+"\n\n");
+//        //resultAutomation.testTestlink();
+//    }
 
 
 

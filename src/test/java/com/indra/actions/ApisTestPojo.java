@@ -11,8 +11,8 @@ import static io.restassured.path.json.JsonPath.from;
 public class ApisTestPojo {
     public String getAuthenticateTokenAPI(String URL){
         RequestAuthenticateApi requestAuthenticateApi = new RequestAuthenticateApi();
-        requestAuthenticateApi.setUsername("Orlando.Pautt");
-        requestAuthenticateApi.setPassword("OrlandoDar.12*");
+        requestAuthenticateApi.setUsername("Natalia.Rios");
+        requestAuthenticateApi.setPassword("NataliaRio.11-");
         URL="http://10.69.42.60:8089/api/authenticate-api";
 
         ResponseAuthenticateApi responseAuthenticateApi =

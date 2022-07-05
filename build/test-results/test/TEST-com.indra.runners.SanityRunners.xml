@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.indra.runners.SanityRunners" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="22LAP5CD1195R94" time="0.0">
+<testsuite name="com.indra.runners.SanityRunners" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="22LAP5CD1195RQX" time="0.0">
   <properties/>
-  <system-out><![CDATA[07:56:03.964 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+  <system-out><![CDATA[16:19:50.240 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -18,9 +18,9 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 
-07:56:03.964 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@c8803f7e
-07:56:03.981 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Sanity Apis Merlin Json
-07:56:04.012 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+16:19:50.246 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@c8803f7e
+16:19:50.250 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Sanity Apis Merlin Json
+16:19:50.294 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -28,137 +28,52 @@
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: se requiere ejecutar Reconexion 430
--------------------------------------------------------------------(sanity-apis-merlin-json;se-requiere-ejecutar-reconexion-430)
-07:56:04.063 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
-07:56:04.063 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
-07:56:26.943 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
-07:56:27.100 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
-07:56:27.111 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@590f8473
-07:56:27.111 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Apis Merlin Json:se requiere ejecutar Reconexion 430
-07:56:27.111 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@590f8473: Generating report for test outcome: Sanity Apis Merlin Json:se requiere ejecutar Reconexion 430
-07:56:27.128 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for se requiere ejecutar Reconexion 430 to file C:\MerlinJsonAutomation\target\site\serenity\e38822228641eb39bd16984ca3f9cc39ffe79e46ddb1b52683b5a74253c43803.json (using temp file C:\MerlinJsonAutomation\target\site\serenity\e38822228641eb39bd16984ca3f9cc39ffe79e46ddb1b52683b5a74253c43803.json1b766fec-a95e-4063-b7cf-315e125bf73f)
-07:56:27.168 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Apis Merlin Json:se requiere ejecutar Reconexion 430 done
-07:56:27.168 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
-07:56:27.168 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 57 ms
-07:56:27.169 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1ac30bb1
-07:56:27.169 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Apis Merlin Json:se requiere ejecutar Reconexion 430
-07:56:27.169 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1ac30bb1: Generating report for test outcome: Sanity Apis Merlin Json:se requiere ejecutar Reconexion 430
-07:56:27.169 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR se requiere ejecutar Reconexion 430 in e38822228641eb39bd16984ca3f9cc39ffe79e46ddb1b52683b5a74253c43803
-07:56:27.184 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
-07:56:27.184 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
-07:56:27.184 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[Requirement{name='Sanity Apis Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
-07:56:27.195 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome se requiere ejecutar Reconexion 430-[]: Optional[Requirement{name='Sanity Apis Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
-07:56:27.195 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome se requiere ejecutar Reconexion 430-[]: Optional[Requirement{name='Sanity Apis Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
-07:56:27.283 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Sanity Apis Merlin Json:se requiere ejecutar Reconexion 430 in e38822228641eb39bd16984ca3f9cc39ffe79e46ddb1b52683b5a74253c43803.html in directory C:\MerlinJsonAutomation\target\site\serenity  
-07:56:27.283 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in e38822228641eb39bd16984ca3f9cc39ffe79e46ddb1b52683b5a74253c43803.html
-07:56:27.595 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report e38822228641eb39bd16984ca3f9cc39ffe79e46ddb1b52683b5a74253c43803.html in 312 ms
-07:56:27.595 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Apis Merlin Json:se requiere ejecutar Reconexion 430 done
-07:56:27.595 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
-07:56:27.595 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 426 ms
+TEST STARTED: Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion
+-------------------------------------------------------------------(sanity-apis-merlin-json;realizar-creacion-catalogo-atp-gestion-cuentas-suscripcion-y-ejecucion)
+16:19:50.347 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+16:19:50.348 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+16:25:17.794 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+16:25:17.934 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+16:25:17.955 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@3bf3759f
+16:25:17.957 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Apis Merlin Json:Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion
+16:25:17.959 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@3bf3759f: Generating report for test outcome: Sanity Apis Merlin Json:Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion
+16:25:17.982 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion to file C:\Users\nriosa\Desktop\SanitySemillas\AutomationAPISMerlin\target\site\serenity\6864308fb66fdbfeee10d63a2e7e1b93a71445575d27eebb7b3dc73dd465324b.json (using temp file C:\Users\nriosa\Desktop\SanitySemillas\AutomationAPISMerlin\target\site\serenity\6864308fb66fdbfeee10d63a2e7e1b93a71445575d27eebb7b3dc73dd465324b.json278a17a7-63db-4880-b011-8e56b3bea652)
+16:25:18.096 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Apis Merlin Json:Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion done
+16:25:18.096 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+16:25:18.096 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 141 ms
+16:25:18.096 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5b8474e6
+16:25:18.098 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Apis Merlin Json:Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion
+16:25:18.098 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5b8474e6: Generating report for test outcome: Sanity Apis Merlin Json:Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion
+16:25:18.099 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion in 6864308fb66fdbfeee10d63a2e7e1b93a71445575d27eebb7b3dc73dd465324b
+16:25:18.143 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+16:25:18.144 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+16:25:18.153 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[Requirement{name='Sanity Apis Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
+16:25:18.162 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion-[]: Optional[Requirement{name='Sanity Apis Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
+16:25:18.166 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion-[]: Optional[Requirement{name='Sanity Apis Merlin Json', type='feature' parent = 'null', cardNumber='null'}]
+16:25:18.350 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Sanity Apis Merlin Json:Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion in 6864308fb66fdbfeee10d63a2e7e1b93a71445575d27eebb7b3dc73dd465324b.html in directory C:\Users\nriosa\Desktop\SanitySemillas\AutomationAPISMerlin\target\site\serenity  
+16:25:18.358 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in 6864308fb66fdbfeee10d63a2e7e1b93a71445575d27eebb7b3dc73dd465324b.html
+16:25:18.826 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report 6864308fb66fdbfeee10d63a2e7e1b93a71445575d27eebb7b3dc73dd465324b.html in 468 ms
+16:25:18.826 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity Apis Merlin Json:Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion done
+16:25:18.826 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+16:25:18.826 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 730 ms
+16:25:18.866 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:49322<->10.69.42.60:8089 closed
+16:25:18.867 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:49326<->10.69.42.60:8089 closed
+16:25:18.868 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:49327<->10.69.42.60:8089 closed
 
 ?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/execute.feature:13 ?[0m# se requiere ejecutar Reconexion 430
+?[31msrc/test/resources/features/execute.feature:67 ?[0m# Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion
 
 1 Scenarios (?[31m1 failed?[0m)
-3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m1 passed?[0m)
-0m23,145s
+3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+5m27,700s
 
-java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
-	at java.net.Socket.connect(Socket.java:606)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
-	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:350)
-	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1181)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at com.indra.actions.ExecuteServicesRestActions.getAuthenticateToken(ExecuteServicesRestActions.java:22)
-	at com.indra.actions.ConsultResultAutomationActions.ExecuteAutomation(ConsultResultAutomationActions.java:70)
-	at com.indra.steps_definitions.SanitySteps.seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoDos(SanitySteps.java:40)
-	at ?.se ejecuta la api configurado para la ejecucion de la automatizacion caso dos(src/test/resources/features/execute.feature:15)
+java.lang.AssertionError: Finaliza de manera Exitosa la automatizacion
+Expected: "Exitoso"
+     but: was "Error"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at com.indra.actions.ConsultResultAutomationActions.consultResultOfAutomation(ConsultResultAutomationActions.java:55)
+	at com.indra.steps_definitions.SanitySteps.seObtieneLaRespuestaDeLaEjecucionDeLaAutomatizacion(SanitySteps.java:31)
+	at ?.Se obtiene la respuesta de la ejecucion de la automatizacion(src/test/resources/features/execute.feature:70)
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

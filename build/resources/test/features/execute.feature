@@ -22,37 +22,50 @@ Feature: Sanity Apis Merlin Json
     Then Se obtiene la respuesta de la ejecucion de la automatizacion
 
   @Caso4
-  Scenario: Realizar Cesion de Contrato con Nit a Nit + migracion de plan a un Postpago Empresarial 5.3
+  Scenario: Cambio de Pospago a Pospago Generico
     Given se hace la peticion del token
     When se ejecuta la api configurado para la ejecucion de la automatizacion caso cuatro
     Then Se obtiene la respuesta de la ejecucion de la automatizacion
 
   @Caso5
-  Scenario: Cambio de Pospago a Pospago Generico
+  Scenario: Cambio de Chip (imsi)
     Given se hace la peticion del token
     When se ejecuta la api configurado para la ejecucion de la automatizacion caso cinco
     Then Se obtiene la respuesta de la ejecucion de la automatizacion
 
   @Caso6
-  Scenario: Cambio de Chip (imsi)
+  Scenario: Suspensión Robo Perdida en linea portada
     Given se hace la peticion del token
     When se ejecuta la api configurado para la ejecucion de la automatizacion caso seis
     Then Se obtiene la respuesta de la ejecucion de la automatizacion
 
   @Caso7
-  Scenario: Suspensión Robo Perdida en linea portada
+  Scenario: Reconexión Robo Perdida en linea portada
     Given se hace la peticion del token
     When se ejecuta la api configurado para la ejecucion de la automatizacion caso siete
     Then Se obtiene la respuesta de la ejecucion de la automatizacion
 
   @Caso8
-  Scenario: Reconexión Robo Perdida en linea portada
+  Scenario: Cambio de Plan de Postpago Empresarial 5.3 a Postpago Empresarial 5.1
     Given se hace la peticion del token
     When se ejecuta la api configurado para la ejecucion de la automatizacion caso ocho
     Then Se obtiene la respuesta de la ejecucion de la automatizacion
 
   @Caso9
-  Scenario: Cambio de Plan de Postpago Empresarial 5.3 a Postpago Empresarial 5.1
+  Scenario: Realizar Activación de Roaming Linea Postpago 5,2
     Given se hace la peticion del token
     When se ejecuta la api configurado para la ejecucion de la automatizacion caso nueve
     Then Se obtiene la respuesta de la ejecucion de la automatizacion
+
+  @Caso10
+  Scenario: RCambio de Plan de Postpago Empresarial 5.1 a Postpago Empresarial 5.1 plus
+    Given se hace la peticion del token
+    When se ejecuta la api configurado para la ejecucion de la automatizacion caso diez
+    Then Se obtiene la respuesta de la ejecucion de la automatizacion
+
+  @Caso11
+  Scenario: Realizar creacion catalogo Atp gestion cuentas suscripcion y ejecucion
+    Given se hace la peticion del token
+    When se ejecuta la api configurado para la ejecucion de la automatizacion caso once
+    Then Se obtiene la respuesta de la ejecucion de la automatizacion
+
