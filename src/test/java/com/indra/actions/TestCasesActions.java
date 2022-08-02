@@ -156,20 +156,21 @@ public class TestCasesActions {
         user= fileCSV.data.get(4).get(2);
         password = fileCSV.data.get(4).get(3);
         msisdn = fileCSV.data.get(4).get(4);
+        nombreServidorPuerto = fileCSV.data.get(4).get(7);
 
         String caso=
                 "{\n" +
                         "    \"contentFeature\": [\n" +
-                        "        \"Feature: Cambio de Pospago a Pospago Generico\\n\\n     Scenario Outline: Cambio de linea Pospago a Pospago\\n\\tGiven Deseo navegar a la pagina <urlCrm>\\n\\tAnd Ingreso rapidamente <userCrm> en el campo \\\"User\\\"\\n\\tAnd Ingreso rapidamente <passCrm> en el campo \\\"Password\\\"\\n\\tAnd Doy click en \\\"Submit\\\"\\n\\tAnd Doy click en \\\"PostVenta\\\"\\n\\tAnd Espero que la pagina cargue\\n\\tAnd Selecciono en el arbol la opcion <opcTransacciones>\\n\\tAnd Selecciono en el arbol la opcion <opcModificacionDeLinea>\\n\\tAnd Doy click en \\\"Cambio de plan Controles y Pospagos\\\"\\n\\tAnd Espero <tiempoEspera> segundos\\n\\tAnd Espero que el iFrame \\\"transaccion crm portal\\\" cargue\\n\\tAnd Cargo la pagina interna \\\"transaccion crm portal\\\"\\n\\tWhen Ingreso rapidamente <msisdn> en el campo \\\"Numero de Movil\\\"\\n    And Doy click en \\\"titulo\\\"\\n\\tAnd Ingreso rapidamente <motivo> en el campo \\\"Motivo del Cambio\\\"\\n\\tAnd Espero que el elemento \\\"loading box\\\" sea invisible\\n\\tAnd Selecciono <listaPlan> de la lista \\\"plan destino\\\"\\n\\tAnd Selecciono <contrato> de la lista \\\"renovacion contrato\\\"\\n\\tAnd Doy click en \\\"fecha calendario\\\"\\n\\tAnd Espero que el elemento \\\"loading box\\\" sea invisible\\n\\tAnd Doy click en \\\"boton cambiar plan\\\"\\n\\tThen Selecciono la opcion <alert> del mensaje de alerta\\n\\tAnd Espero que cargue completamente el documento de la pagina\\n\\tThen Verifico el mensaje <mensajeFinal> buscando en la lista \\\"resultados postventa\\\" y realizo scroll hasta el \\\"Resultado cambio\\\"\\n\\n Examples:\\n|urlCrm|userCrm|passCrm|opcTransacciones|opcModificacionDeLinea|tiempoEspera|msisdn|motivo|listaPlan|contrato|alert|mensajeFinal|\\n|\\\""+url+"\\\"|\\\""+user+"\\\"|\\\""+password+"\\\"|\\\"Transacciones\\\"|\\\"Modificacion de Linea\\\"|\\\"5\\\"|\\\""+msisdn+"\\\"|\\\"Cambio de plan pospago a prepago\\\"|\\\"740-Pospago 5.2-\\\"|\\\"SI\\\"|\\\"Aceptar\\\"|\\\"\\\"|\\n\"\n" +
+                        "        \"Feature: Cambio de Pospago a Pospago Generico\\n\\n           Scenario Outline: Cambio de linea Pospago a Pospago\\n\\tGiven Deseo navegar a la pagina <urlCrm>\\n\\tAnd Ingreso rapidamente <userCrm> en el campo \\\"User\\\"\\n\\tAnd Ingreso rapidamente <passCrm> en el campo \\\"Password\\\"\\n\\tAnd Doy click en \\\"Submit\\\"\\n\\tAnd Doy click en \\\"PostVenta\\\"\\n\\tAnd Espero que la pagina cargue\\n\\tAnd Selecciono en el arbol la opcion <opcTransacciones>\\n\\tAnd Selecciono en el arbol la opcion <opcModificacionDeLinea>\\n\\tAnd Doy click en \\\"Cambio de plan Controles y Pospagos\\\"\\n\\tAnd Espero <tiempoEspera> segundos\\n\\tAnd Espero que el iFrame \\\"transaccion crm portal\\\" cargue\\n\\tAnd Cargo la pagina interna \\\"transaccion crm portal\\\"\\n\\tWhen Ingreso rapidamente <msisdn> en el campo \\\"Numero de Movil\\\"\\n    And Doy click en \\\"titulo\\\"\\n    And Espero <Espera> segundos\\n    And Espero <Espera1> segundos\\n    And Espero <Espera2> segundos\\n    And Doy click en \\\"generateToken\\\"\\n    And En el ambiente <ipWithPort> obtengo el token para linea <msisdn> y lo ingreso en el campo \\\"asessorPass\\\"\\n    And Doy click en \\\"titulo\\\"\\n\\tAnd Ingreso rapidamente <motivo> en el campo \\\"Motivo del Cambio\\\"\\n\\tAnd Espero que el elemento \\\"loading box\\\" sea invisible\\n\\tAnd Selecciono <listaPlan> de la lista \\\"plan destino\\\"\\n\\tAnd Selecciono <contrato> de la lista \\\"renovacion contrato\\\"\\n\\tAnd Doy click en \\\"fecha calendario\\\"\\n\\tAnd Espero que el elemento \\\"loading box\\\" sea invisible\\n\\tAnd Doy click en \\\"boton cambiar plan\\\"\\n\\tThen Selecciono la opcion <alert> del mensaje de alerta\\n\\tAnd Espero que cargue completamente el documento de la pagina\\n\\tThen Verifico el mensaje <mensajeFinal> buscando en la lista \\\"resultados postventa\\\" y realizo scroll hasta el \\\"Resultado cambio\\\"\\n\\n Examples:\\n|urlCrm|userCrm|passCrm|opcTransacciones|opcModificacionDeLinea|tiempoEspera|msisdn|Espera|Espera1|Espera2|ipWithPort|motivo|listaPlan|contrato|alert|mensajeFinal|\\n|\\\""+url+"\\\"|\\\""+user+"\\\"|\\\""+password+"\\\"|\\\"Transacciones\\\"|\\\"Modificacion de Linea\\\"|\\\"5\\\"|\\\""+msisdn+"\\\"|\\\"50\\\"|\\\"50\\\"|\\\"50\\\"|\\\""+nombreServidorPuerto+"\\\"|\\\"Cambio de plan pospago a prepago\\\"|\\\"741-Pospago 5.3-\\\"|\\\"SI\\\"|\\\"Aceptar\\\"|\\\"-\\\"|\\n\"\n" +
                         "    ],\n" +
                         "    \"nameFeature\": [\n" +
                         "        \"ESC001_ Cambio de Pospago a Pospago Generico\"\n" +
                         "    ],\n" +
                         "    \"contentProperties\": [\n" +
-                        "        \"|User=id:username|Password=id:password|Submit=name:login|PostVenta=linkText:Postventa|Cambio de plan Controles y Pospagos=xpath://a[contains(text(),'Cambio de plan Controles y Pospagos')]|transaccion crm portal=id:iframe|Numero de Movil=id:PlanschangeForm:msisdnField:msisdn|titulo=//h1[contains(text(),'Cambio')]|Motivo del Cambio=id:PlanschangeForm:reasonField:reason|loading box=id:ajaxLoadingModalBoxCDiv|plan destino=id:PlanschangeForm:planField2|renovacion contrato=name:PlanschangeForm:InfoAnnualRenewal:decisionField|fecha calendario=id:PlanschangeForm:IdFechaCalendarizarInputDate|boton cambiar plan=id:PlanschangeForm:bntPlanChange|resultados postventa=//body//li[@class='infomsg']|Resultado cambio=xpath://body//li[%s]|\"\n" +
+                        "        \"|User=id:username|Password=id:password|Submit=name:login|PostVenta=linkText:Postventa|Cambio de plan Controles y Pospagos=xpath://a[contains(text(),'Cambio de plan Controles y Pospagos')]|transaccion crm portal=id:iframe|Numero de Movil=id:PlanschangeForm:msisdnField:msisdn|titulo=//h1[contains(text(),'Cambio')]|generateToken=name:PlanschangeForm:j_id190|asessorPass=//*[@id=\\\"PlanschangeForm:j_id198:aseToken\\\"]|Motivo del Cambio=//*[@id=\\\"PlanschangeForm:reasonField:reason\\\"]|loading box=id:ajaxLoadingModalBoxCDiv|plan destino=id:PlanschangeForm:planField2|renovacion contrato=name:PlanschangeForm:InfoAnnualRenewal:decisionField|fecha calendario=id:PlanschangeForm:IdFechaCalendarizarInputDate|boton cambiar plan=id:PlanschangeForm:bntPlanChange|resultados postventa=//body//li[@class='infomsg']|Resultado cambio=xpath://body//li[%s]|\"\n" +
                         "    ],\n" +
                         "    \"allowsTrace\": \"0\",\n" +
-                        "    \"browser\": \"chrome\",\n" +
+                        "    \"browser\": \"firefox\",\n" +
                         "    \"aplicationType\": [\n" +
                         "        \"Web\"\n" +
                         "    ],\n" +
@@ -186,7 +187,7 @@ public class TestCasesActions {
                         "        \"1\"\n" +
                         "    ],\n" +
                         "    \"testError\": false,\n" +
-                        "    \"stopExecution\":false\n" +
+                        "    \"stopejecution\": false\n" +
                         "}";
 
         return caso;
@@ -324,40 +325,38 @@ public class TestCasesActions {
         user= fileCSV.data.get(8).get(2);
         password = fileCSV.data.get(8).get(3);
         msisdn = fileCSV.data.get(8).get(4);
+        nombreServidorPuerto = fileCSV.data.get(8).get(7);
+
         String caso=
                 "{\n" +
                         "    \"contentFeature\": [\n" +
-                        "        \"Feature: Cancelacion Roaming Linea Pospago 5.2\\n\\n Scenario Outline: Cancelacion Roaming Linea Pospago\\n Given Deseo navegar a la pagina <urlCrm>\\n And Ingreso el dato confidencial <userCrm> en el campo \\\"User\\\" sin captura\\n And Ingreso el dato confidencial <passCrm> en el campo \\\"Password\\\" sin captura\\n And Doy click en \\\"Submit\\\"\\n And Doy click en \\\"PostVenta\\\"\\n And Espero que la pagina cargue\\n And Selecciono en el arbol la opcion <opcTransacciones>\\n And Selecciono en el arbol la opcion <opcRoaming>\\n And Doy click en \\\"Cancelacion roaming\\\"\\n And Espero <tiempoEspera> segundos\\n And Espero que el iFrame \\\"transaccion crm portal\\\" cargue\\n And Cargo la pagina interna \\\"transaccion crm portal\\\"\\n When Ingreso rapidamente <msisdn> en el campo \\\"Numero\\\"\\n And Doy click en \\\"buscar\\\"\\n And Espero <tiempoEspera> segundos\\n And Doy click en \\\"cancelar roaming\\\"\\n And Doy click en \\\"aceptar\\\"\\n\\n Examples:\\n|urlCrm|userCrm|passCrm|opcTransacciones|opcRoaming|tiempoEspera|msisdn|\\n|\\\""+url+"\\\"|\\\""+user+"\\\"|\\\""+password+"\\\"|\\\"Transacciones\\\"|\\\"Roaming\\\"|\\\"5\\\"|\\\""+msisdn+"\\\"|\\n\"\n" +
+                        "        \"Feature: Cambio de Plan de Postpago Empresarial 5.3 a Postpago Empresarial 5.1\\n\\n       Scenario Outline: Cambio de Plan de Postpago Empresarial\\n\\tGiven Deseo navegar a la pagina <urlCrm>\\n\\tAnd Ingreso rapidamente <userCrm> en el campo \\\"User\\\"\\n\\tAnd Ingreso rapidamente <passCrm> en el campo \\\"Password\\\"\\n\\tAnd Doy click en \\\"Submit\\\"\\n\\tAnd Doy click en \\\"PostVenta\\\"\\n\\tAnd Espero que la pagina cargue\\n\\tAnd Selecciono en el arbol la opcion <opcTransacciones>\\n\\tAnd Selecciono en el arbol la opcion <opcModificacionDeLinea>\\n\\tAnd Doy click en \\\"Cambio de plan Controles y Pospagos\\\"\\n\\tAnd Espero <tiempoEspera> segundos\\n\\tAnd Espero que el iFrame \\\"transaccion crm portal\\\" cargue\\n\\tAnd Cargo la pagina interna \\\"transaccion crm portal\\\"\\n\\tWhen Ingreso rapidamente <msisdn> en el campo \\\"Numero de Movil\\\"\\n    And Doy click en \\\"generateToken\\\"\\n    And Espero <Espera> segundos\\n    And Espero <Espera30> segundos\\n    And Doy click en \\\"generateToken\\\"\\n    And Espero <tiempo> segundos\\n    And En el ambiente <ipWithPort> obtengo el token para linea <msisdn> y lo ingreso en el campo \\\"asessorPass\\\"\\n    And Doy click en \\\"vble_mapeo\\\"\\n    And Espero <tiempo5> segundos\\n\\tAnd Ingreso rapidamente <motivo> en el campo \\\"Motivo del Cambio\\\"\\n\\tAnd Espero que el elemento \\\"loading box\\\" sea invisible\\n\\tAnd Selecciono <listaPlan> de la lista \\\"plan destino\\\"\\n\\tAnd Selecciono <contrato> de la lista \\\"renovacion contrato\\\"\\n\\tAnd Doy click en \\\"fecha calendario\\\"\\n\\tAnd Espero que el elemento \\\"loading box\\\" sea invisible\\n\\tAnd Doy click en \\\"boton cambiar plan\\\"\\n\\tThen Selecciono la opcion <alert> del mensaje de alerta\\n\\tAnd Espero que cargue completamente el documento de la pagina\\n\\tThen Verifico el mensaje <mensajeFinal> buscando en la lista \\\"resultados postventa\\\" y realizo scroll hasta el \\\"Resultado cambio\\\"\\n\\n Examples:\\n|urlCrm|userCrm|passCrm|opcTransacciones|opcModificacionDeLinea|tiempoEspera|msisdn|Espera|Espera30|tiempo|ipWithPort|tiempo5|motivo|listaPlan|contrato|alert|mensajeFinal|\\n|\\\""+url+"\\\"|\\\""+user+"\\\"|\\\""+password+"\\\"|\\\"Transacciones\\\"|\\\"Modificacion de Linea\\\"|\\\"5\\\"|\\\""+msisdn+"\\\"|\\\"40\\\"|\\\"40\\\"|\\\"5\\\"|\\\""+nombreServidorPuerto+"\\\"|\\\"5\\\"|\\\"Cambio de plan pospago a prepago\\\"|\\\"1208-Pospago 5.1 Empresarial-\\\"|\\\"SI\\\"|\\\"Aceptar\\\"|\\\"\\\"|\\n\"\n" +
                         "    ],\n" +
                         "    \"nameFeature\": [\n" +
-                        "        \"ESC001_ Cancelacion Roaming Linea Pospago 5.2\"\n" +
+                        "        \"ESC001_ Cambio de Plan de Postpago Empresarial 5.3 a Postpago Empresarial 5.1\"\n" +
                         "    ],\n" +
                         "    \"contentProperties\": [\n" +
-                        "        \"|User=//*[@name='username']|Password=//*[@name='password']|Submit=//*[@class='login-button']|PostVenta=//div[@id='UINavigationPortlet']//a[contains(text(),'Postventa')]|Cancelacion roaming=(//a[@href='#'][contains(@id,'id17')][contains(.,'Cancelaci')])[6]|transaccion crm portal=//iframe|Numero=//*[@id='formBusqueda:inputMsisdn']|buscar=//*[@name='formBusqueda:j_id17']|cancelar roaming=//*[@id='formCancelacion:j_id32']|aceptar=//*[@class='botonAceptar']|\"\n" +
+                        "        \"|User=id:username|Password=id:password|Submit=name:login|PostVenta=linkText:Postventa|Cambio de plan Controles y Pospagos=xpath://a[contains(text(),'Cambio de plan Controles y Pospagos')]|transaccion crm portal=id:iframe|Numero de Movil=id:PlanschangeForm:msisdnField:msisdn|generateToken=//input[@value=' Solicitar Clave ']|asessorPass=//input[@id='PlanschangeForm:j_id198:aseToken']|vble_mapeo=id:PlanschangeForm:reasonField:reason|Motivo del Cambio=id:PlanschangeForm:reasonField:reason|loading box=id:ajaxLoadingModalBoxCDiv|plan destino=id:PlanschangeForm:planField2|renovacion contrato=name:PlanschangeForm:InfoAnnualRenewal:decisionField|fecha calendario=id:PlanschangeForm:IdFechaCalendarizarInputDate|boton cambiar plan=id:PlanschangeForm:bntPlanChange|resultados postventa=//body//li[@class='infomsg']|Resultado cambio=xpath://body//li[%s]|\"\n" +
                         "    ],\n" +
                         "    \"allowsTrace\": \"0\",\n" +
-                        "    \"browser\": \"chrome\",\n" +
+                        "    \"browser\": \"firefox\",\n" +
                         "    \"aplicationType\": [\n" +
-                        "        \"Web\",\n" +
                         "        \"Web\"\n" +
                         "    ],\n" +
                         "    \"aplication\": [\n" +
-                        "        \"CRM\",\n" +
                         "        \"CRM\"\n" +
                         "    ],\n" +
                         "    \"process\": [\n" +
-                        "        \" Cancelacion Roaming Linea Pospago\",\n" +
-                        "        \" Activacion Control para cliente CC\"\n" +
+                        "        \" Cambio de Pospago a Pospago Generico\"\n" +
                         "    ],\n" +
                         "    \"iterations\": [\n" +
                         "        1\n" +
                         "    ],\n" +
                         "    \"appTypeToValidate\": [\n" +
-                        "        \"1\",\n" +
                         "        \"1\"\n" +
                         "    ],\n" +
                         "    \"testError\": false,\n" +
-                        "    \"stopExecution\":false\n" +
+                        "    \"stopejecution\": false\n" +
                         "}";
         return caso;
     }
@@ -450,6 +449,7 @@ public class TestCasesActions {
         user= fileCSV.data.get(11).get(2);
         password = fileCSV.data.get(11).get(3);
         msisdn = fileCSV.data.get(11).get(4);
+        nit = fileCSV.data.get(11).get(5);
         cedulavendedor = fileCSV.data.get(11).get(6);
         String caso=
                 "{\n" +

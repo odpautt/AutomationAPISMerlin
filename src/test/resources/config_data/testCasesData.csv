@@ -1,12 +1,12 @@
 ﻿nombrecaso;url;usuario;contraseña;msisdn;nit;cedulavendedor;ipservidor:puerto;cc
-Cancelacion por solicitud;http://10.69.60.140:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CP1112792576;Tigo.2022*;3045981670;;;;
-Reconexion 430;http://10.69.60.140:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CP1112792576;Tigo.2022*;3045981670;;;;
-Realizar Cancelación de roaming Linea Postpago 5,2;http://10.69.60.140:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CP1112792576;Tigo.2022*;3045981670;;;;
-Cambio de Pospago a Pospago Generico;http://10.69.60.140:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CP1112792576;Tigo.2022*;3045981670;;;;
-Cambio de Chip (imsi);;;;;;;;
-Suspensión Robo Perdida en linea portada;http://10.69.60.140:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CP1112792576;Tigo.2022*;3046010569;;;;
-Reconexión Robo Perdida en linea portada;http://10.69.60.140:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CP1112792576;Tigo.2022*;3046010569;;;;
-Cambio de plan Pospago Empresarial 5_3 a 5_1;http://10.69.60.140:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CP1112792576;Tigo.2022*;3045981670;;;;
-Realizar Activación de Roaming Linea Postpago 5,2;http://10.69.60.140:8280/portal/CRMPortal;CP1112792576;Tigo.2022*;;;;;3045981670
-Cambio de plan Pospago Empresarial 5_1 a 5_1 plus;http://10.69.60.140:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CP1112792576;Tigo.2022*;3045981670;;;;
-Catalogo atp;http://10.69.60.140:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CP1112792576;Tigo.2022*;3045981670;992480071;1112792576;;
+Cancelacion por solicitud;;;;;;;;
+Reconexion 430;http://10.65.50.11:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CQ10960370;Tigo.2022*;3045981670;;;;
+Realizar Cancelación de roaming Linea Postpago 5,2;http://10.65.50.11:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CQ10960370;Tigo.2022*;3045981670;;;;
+Cambio de Pospago a Pospago Generico;http://10.65.50.11:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CQ10960370;Tigo.2022*;3045981670;;;10.65.50.8:22;
+Cambio de Chip (imsi);http://10.65.50.11:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CQ10960370;Tigo.2022*;3052755816;732111324709817;;;
+Suspensión Robo Perdida en linea portada;http://10.65.50.11:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CQ10960370;Tigo.2022*;3046010569;;;;
+Reconexión Robo Perdida en linea portada;http://10.65.50.11:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CQ10960370;Tigo.2022*;3046010569;;;;
+Cambio de plan Pospago Empresarial 5_3 a 5_1;http://10.65.50.11:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CQ10960370;Tigo.2022*;3045981670;;;10.65.50.8:22;
+Realizar Activación de Roaming Linea Postpago 5,2;http://10.65.50.11:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CQ10960370;Tigo.2022*;;;;;3045981670
+Cambio de plan Pospago Empresarial 5_1 a 5_1 plus;http://10.65.50.11:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CQ10960370;Tigo.2022*;3045981670;;;10.69.60.136:22;
+Catalogo atp;http://10.65.50.11:8280/portal/login?initialURI=%2Fportal%2FCRMPortal%2F;CQ10960370;Tigo.2022*;3045981670;992480071;10960370;10.69.60.138:22;

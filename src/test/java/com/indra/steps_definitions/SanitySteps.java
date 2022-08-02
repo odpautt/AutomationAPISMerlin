@@ -23,13 +23,13 @@ public class SanitySteps {
 
     @When("^se ejecuta la api configurada para la ejecucion de la automatizacion caso uno$")
     public void seEjecutaLaApiConfiguradaParaLaEjecucionDeLaAutomatizacionCaso() {
-       resultAutomation.ExecuteAutomation(testCasesActions.CancelacionPorSolicitud());
+        //resultAutomation.ExecuteAutomation(testCasesActions.CancelacionPorSolicitud());
     }
 
     @Then("^Se obtiene la respuesta de la ejecucion de la automatizacion$")
     public void seObtieneLaRespuestaDeLaEjecucionDeLaAutomatizacion() throws Exception {
         resultAutomation.consultResultOfAutomation();
-        System.out.println("\n\n"+resultAutomation.consultResultOfAutomation()+"\n\n");
+        System.out.println("\n\n" + resultAutomation.consultResultOfAutomation() + "\n\n");
     }
 
 
@@ -37,64 +37,72 @@ public class SanitySteps {
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso dos$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoDos() {
         resultAutomation.ExecuteAutomation(testCasesActions.Reconexion430());
-        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
-        System.out.println(testCasesActions.Reconexion430() +"\n"+testCasesActions.ConsultarLineaDetalles("Activa"));
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activo"));
+        System.out.println(testCasesActions.Reconexion430() + "\n" + testCasesActions.ConsultarLineaDetalles("Activa"));
     }
 
+    // caso 3
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso tres$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoTres() {
         resultAutomation.ExecuteAutomation(testCasesActions.RealizarCancelacionDeRoamingLineaPostpago5_2());
-        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activo"));
     }
 
-
+    // caso 4
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso cuatro$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoCuatro() {
         resultAutomation.ExecuteAutomation(testCasesActions.CambioDePospagoAPospagoGenerico());
-        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activo"));
     }
 
+    // caso 5
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso cinco$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoCinco() {
-
+        resultAutomation.ExecuteAutomation(testCasesActions.CambioDeChip_imsi());
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activo"));
     }
 
+    // caso 6
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso seis$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoSeis() {
         resultAutomation.ExecuteAutomation(testCasesActions.SuspensionRoboPerdidaEnLineaPortada());
-        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles(""));
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Suspendido con Cargo Basico"));
     }
 
+    // caso 7
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso siete$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoSiete() {
         resultAutomation.ExecuteAutomation(testCasesActions.ReconexionRoboPerdidaEnLineaPortada());
-        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activo"));
 
     }
 
+    // caso 8
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso ocho$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoOcho() {
         resultAutomation.ExecuteAutomation(testCasesActions.CambioDePlanDePostpagoEmpresarial5_3APostpagoEmpresarial5_1());
-        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activo"));
     }
 
+    // caso 9
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso nueve$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoNueve() {
         resultAutomation.ExecuteAutomation(testCasesActions.RealizarActivacionDeRoamingLineaPostpago5_2());
-        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activo"));
     }
 
+    // caso 10
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso diez$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoDiez() {
         resultAutomation.ExecuteAutomation(testCasesActions.CambioDePlanDePostpagoEmpresarial5_1APostpagoEmpresarial5_1Plus());
-        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activo"));
     }
 
-
+    // caso 11
     @When("^se ejecuta la api configurado para la ejecucion de la automatizacion caso once$")
     public void seEjecutaLaApiConfiguradoParaLaEjecucionDeLaAutomatizacionCasoOnce() {
         resultAutomation.ExecuteAutomation(testCasesActions.CatalogoAtp_GestionCuentas_Suscripcion_Ejecucion());
-        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activa"));
+        resultAutomation.ExecuteAutomation(testCasesActions.ConsultarLineaDetalles("Activo"));
 
     }
 
